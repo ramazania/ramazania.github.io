@@ -3,46 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ali Ramazani</title>
+  <title>Ali Ramazani – Portfolio</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 2rem; line-height: 1.6; background: #f9f9f9; }
-    h1, h2 { color: #2c3e50; }
-    .section { margin-bottom: 2rem; }
-    .footer { margin-top: 2rem; font-size: 0.9rem; color: #777; }
-    a { color: #2980b9; text-decoration: none; }
-    a:hover { color: #1abc9c; }
+    body { font-family: Arial, sans-serif; margin: 0; background: #f9f9f9; }
+    header {
+      background: #2c3e50;
+      padding: 1rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #1abc9c;
+    }
+    main {
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 { color: #2c3e50; }
+    p { color: #555; max-width: 600px; margin: auto; }
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      margin-top: 20px;
+      background-color: #2980b9;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: background 0.2s ease-in-out;
+    }
+    .btn:hover {
+      background-color: #1abc9c;
+    }
+    footer {
+      margin-top: 3rem;
+      padding: 1rem;
+      text-align: center;
+      background: #eee;
+      color: #777;
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 <body>
-  <h1>Ali Ramazani</h1>
-  <p><em>Computer Science Graduate | Coding Tutor | Ethical Hacker in Training</em></p>
-  <!-- Button to tutoring page -->
-  <a href="tutoring" class="btn">Visit Ali’s Coding Lab</a>
+  <header>
+    <nav>
+      <a href="/">Home</a>
+      <a href="tutoring">Tutoring</a>
+      <a href="https://github.com/ramazania" target="_blank">GitHub</a>
+      <a href="mailto:youremail@gmail.com">Contact</a>
+    </nav>
+  </header>
 
-  <div class="section">
-    <h2>About Me</h2>
-    <p>
-      I studied Computer Science and enjoy teaching coding. 
-      I’ve worked with Juni Learning as a coding instructor and I now tutor students directly in Python, Java, and CS fundamentals.
-    </p>
-  </div>
+  <main>
+    <h1>👋 Hi, I’m Ali Ramazani</h1>
+    <p>Welcome to my personal website! I’m a Computer Science graduate, coding tutor, and passionate about teaching Python, Java, and problem solving.</p>
 
-  <div class="section">
-    <h2>Experience</h2>
-    <ul>
-      <li>Coding Instructor – Juni Learning (202X–2025)</li>
-      <li>B.S. in Computer Science</li>
-      <li>CompTIA A+ Certified</li>
-    </ul>
-  </div>
+    <a href="tutoring" class="btn">Visit Ali’s Coding Lab</a>
+  </main>
 
-  <div class="section">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:youremail@gmail.com">youremail@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourlinkedin">linkedin.com/in/yourlinkedin</a></p>
-    <p>GitHub: <a href="https://github.com/ramazania">github.com/ramazania</a></p>
-  </div>
-
-  <div class="footer">© 2025 Ali Ramazani</div>
+  <footer>
+    © 2025 Ali Ramazani
+  </footer>
 </body>
 </html>
