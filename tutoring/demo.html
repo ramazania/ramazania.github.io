@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Level 1 - Ramazania Tutoring</title>
+  <link rel="stylesheet" href="../styles.css" />
+
+  <style>
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #333;
+    }
+
+    details {
+      background: #f9f9f9;
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    summary {
+      cursor: pointer;
+      padding: 1rem 1.5rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      background: #0073e6;
+      color: white;
+      user-select: none;
+    }
+
+    details[open] summary {
+      border-bottom: 2px solid #ddd;
+      border-radius: 10px 10px 0 0;
+      background: #005bb5;
+    }
+
+    details p,
+    details ul,
+    details video {
+      padding: 1rem 1.5rem;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1.5rem;
+    }
+
+    video {
+      display: block;
+      margin: 1rem auto;
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../tutoring.html">Tutoring</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    <h1>AI Level 1 Projects</h1>
+    <p style="text-align:center;">Expand each project below to view full instructions and resources.</p>
+
+    <!-- Project 1 -->
+    <section>
+      <details>
+        <summary>Project 1: Dog Class</summary>
+        <p>Define a <code>Dog</code> class according to the following steps:</p>
+        <ul>
+          <li>Write an <code>__init__()</code> method with instance attributes: <code>name</code>, <code>age</code>, <code>tricks</code> (a list), and <code>isSitting</code> (a boolean).</li>
+          <li>Add methods like <code>learn_trick()</code>, <code>do_trick()</code>, <code>sit_down()</code>, <code>stand_up()</code>, <code>get_state()</code>, and a <code>__str__()</code>.</li>
+          <li>Test your class by creating Dog objects and calling the methods.</li>
+        </ul>
+        <p>When you’ve finished your project, make a <strong>Recording Studio Video</strong> walking through your code.</p>
+        <video autoplay controls loop muted>
+          <!-- <source src="https://static.junilearning.com/ai_level_1/fai1_project_1.mp4" type="video/mp4"/> -->
+          <source src="assets/ai1/fai1_project_1.mp4" type="video/mp4"/>
+        </video>
+      </details>
+    </section>
+
+    <!-- Project 2 Example -->
+    <section>
+      <details>
+        <summary>FAI1 Project 2: BankAccount Class</summary>
+        Define a <code>BankAccount</code> class according to the following steps:
+        <ul>
+          <li>Write the <code>__init__()</code> method for the class with the following instance attributes:
+            <code>owner</code>, <code>balance</code>, and <code>interest_rate</code>. The method should have parameters for
+            the <code>owner</code> and the <code>interest_rate</code> for the <code>BankAccount</code>. The
+            <code>balance</code> should initially be 0.</li>
+          <li>Write an instance method called <code>deposit()</code> that takes in the amount that should be deposited into
+            the <code>BankAccount</code> and updates the <code>balance</code> accordingly.</li>
+          <li>Write an instance method called <code>withdraw()</code> that takes in the amount that should be withdrawn from
+            the <code>BankAccount</code> and updates the <code>balance</code> accordingly. Be sure to reject the transaction
+            if the account is being overdrawn.</li>
+          <li>Write an instance method called <code>calculate_interest()</code> that calculates interest earned based on the
+            <code>BankAccount’s</code> <code>balance</code> and <code>interest_rate</code> and adds the interest to the
+            <code>BankAccount’s</code> <code>balance.</code></li>
+          <li>Write a <code>__str__()</code> method that prints the <code>BankAccount’s</code> <code>owner</code> and its
+            <code>balance</code>.</li>
+          <li>Test out your class by creating a BankAccount object and calling all of its methods. Be sure to also test your
+            <code>__str__()</code> method by printing out the object after each transaction.</li>
+        </ul>
+        <br />
+        <br />
+        When you’ve finished your project, make a <b>Recording Studio Video</b> where you <b><em>explain what the project
+            does and how you programmed it</em></b>.
+        Forgot how to make a Recording Studio Video? Watch <a alt="#" href="https://vimeo.com/618232421/19d4d10bc5"
+          rel="noopener noreferrer" target="_blank">this</a>!
+        <br />
+        <br />
+        Then, <b>share your project</b>!
+        Forgot how? Watch <a alt="#" href="https://vimeo.com/618182154/1424fee4a9" rel="noopener noreferrer"
+          target="_blank">this</a> video!
+    
+        <br />
+        <br />
+        <video autoplay="" controls="" loop="" muted="" style="object-fit: contain">
+          <source src="https://static.junilearning.com/ai_level_1/fai1_project_2.mp4" type="video/mp4" />
+        </video>
+      </details>
+    </section>
+
+    <!-- Keep adding more projects -->
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2025 Ramazania Tutoring</p>
+  </footer>
+</body>
+</html>
